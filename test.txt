@@ -1,0 +1,83 @@
+name_ test
+description_ Empty Network
+inputs_ 2
+hidden_ 3
+outputs_ 1
+* * * * * * * * * *
+input_neurons
+* * * * * * * * * *
+input_neuron[0]
+inputs_ 1
+activation_value_ 1
+threshold_ 0
+readiness_ 0
+activation_function_ input
+derivative_function_ null_func
+coords_ 0 0 
+forward_synapse 1 0 
+weight -0.217396
+forward_synapse 1 1 
+weight -1.23498
+forward_synapse 1 2 
+weight -0.268956
+* * * * * * * * * *
+input_neuron[1]
+inputs_ 2
+activation_value_ 2
+threshold_ 0
+readiness_ 0
+activation_function_ input
+derivative_function_ null_func
+coords_ 0 1 
+forward_synapse 1 0 
+weight 1.00915
+forward_synapse 1 1 
+weight 1.50724
+forward_synapse 1 2 
+weight 1.71605
+* * * * * * * * * *
+hidden_neurons
+* * * * * * * * * *
+hidden_neuron[0]
+inputs_ 1.8009
+activation_value_ 0.858259
+threshold_ 0
+readiness_ 0
+activation_function_ sigmoid
+derivative_function_ sigmoid_derivative
+coords_ 1 0 
+forward_synapse 2 0 
+weight_ -0.391945
+* * * * * * * * * *
+hidden_neuron[1]
+inputs_ 1.7795
+activation_value_ 0.855635
+threshold_ 0
+readiness_ 0
+activation_function_ sigmoid
+derivative_function_ sigmoid_derivative
+coords_ 1 1 
+forward_synapse 2 0 
+weight_ 0.108498
+* * * * * * * * * *
+hidden_neuron[2]
+inputs_ 3.16314
+activation_value_ 0.959424
+threshold_ 0
+readiness_ 0
+activation_function_ sigmoid
+derivative_function_ sigmoid_derivative
+coords_ 1 2 
+forward_synapse 2 0 
+weight_ 1.65405
+* * * * * * * * * *
+output_neurons
+* * * * * * * * * *
+output_neuron[0]
+inputs_ 1.34338
+activation_value_ 0.793045
+threshold_ 0
+readiness_ 0
+activation_function_ sigmoid
+derivative_function_ sigmoid_derivative
+coords_ 2 0 

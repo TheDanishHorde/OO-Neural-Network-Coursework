@@ -1,0 +1,143 @@
+name_ sorting_example
+description_ This is an example of a network with the correct synapse connections written in the wrong order according to coordinates
+inputs_ 2
+hidden_ 6
+outputs_ 2
+* * * * * * * * * *
+input_neurons
+* * * * * * * * * *
+input_neuron[1]
+inputs_ 2
+activation_value_ 2
+threshold_ 0
+readiness_ 0
+activation_function_ input
+derivative_function_ input_derivative
+coords_ 0 1 
+forward_synapse 1 0 
+weight -0.322437
+forward_synapse 1 1 
+weight 0.61975
+forward_synapse 1 2 
+weight 0.346162
+* * * * * * * * * *
+input_neuron[0]
+inputs_ 1
+activation_value_ 1
+threshold_ 0
+readiness_ 0
+activation_function_ input
+derivative_function_ input_derivative
+coords_ 0 0 
+forward_synapse 1 0 
+weight -0.427174
+forward_synapse 1 1 
+weight -0.278402
+forward_synapse 1 2 
+weight 0.47676
+* * * * * * * * * *
+hidden_neurons
+* * * * * * * * * *
+hidden_neuron[3]
+inputs_ 0.317575
+activation_value_ 0.578733
+threshold_ 0
+readiness_ 0
+activation_function_ sigmoid
+derivative_function_ sigmoid_derivative
+coords_ 2 0 
+forward_synapse 3 0 
+weight_ -1.66936
+forward_synapse 3 1 
+weight_ 1.05152
+* * * * * * * * * *
+hidden_neuron[5]
+inputs_ 0.910829
+activation_value_ 0.71317
+threshold_ 0
+readiness_ 0
+activation_function_ sigmoid
+derivative_function_ sigmoid_derivative
+coords_ 2 2 
+forward_synapse 3 0 
+weight_ 1.10005
+forward_synapse 3 1 
+weight_ 1.25615
+* * * * * * * * * *
+hidden_neuron[0]
+inputs_ -1.07205
+activation_value_ 0.255014
+threshold_ 0
+readiness_ 0
+activation_function_ sigmoid
+derivative_function_ sigmoid_derivative
+coords_ 1 0 
+forward_synapse 2 0 
+weight_ -1.84615
+forward_synapse 2 1 
+weight_ -0.760465
+forward_synapse 2 2 
+weight_ -0.750805
+* * * * * * * * * *
+hidden_neuron[1]
+inputs_ 0.961098
+activation_value_ 0.723342
+threshold_ 0
+readiness_ 0
+activation_function_ sigmoid
+derivative_function_ sigmoid_derivative
+coords_ 1 1 
+forward_synapse 2 0 
+weight_ -0.208053
+forward_synapse 2 1 
+weight_ -0.469834
+forward_synapse 2 2 
+weight_ 1.11211
+* * * * * * * * * *
+hidden_neuron[4]
+inputs_ 0.64834
+activation_value_ 0.656636
+threshold_ 0
+readiness_ 0
+activation_function_ sigmoid
+derivative_function_ sigmoid_derivative
+coords_ 2 1 
+forward_synapse 3 0 
+weight_ -0.189455
+forward_synapse 3 1 
+weight_ -0.381901
+* * * * * * * * * *
+hidden_neuron[2]
+inputs_ 1.16908
+activation_value_ 0.762979
+threshold_ 0
+readiness_ 0
+activation_function_ sigmoid
+derivative_function_ sigmoid_derivative
+coords_ 1 2 
+forward_synapse 2 0 
+weight_ 1.23052
+forward_synapse 2 1 
+weight_ 1.54935
+forward_synapse 2 2 
+weight_ 0.390391
+* * * * * * * * * *
+output_neurons
+* * * * * * * * * *
+output_neuron[0]
+inputs_ -0.305994
+activation_value_ 0.424093
+threshold_ 0
+readiness_ 0
+activation_function_ sigmoid
+derivative_function_ sigmoid_derivative
+coords_ 3 0 
+* * * * * * * * * *
+output_neuron[1]
+inputs_ 1.25363
+activation_value_ 0.777928
+threshold_ 0
+readiness_ 0
+activation_function_ sigmoid
+derivative_function_ sigmoid_derivative
+coords_ 3 1 
